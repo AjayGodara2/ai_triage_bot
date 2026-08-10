@@ -1,65 +1,133 @@
-AI Triage Bot
-About the Project
+# AI Triage Bot
 
-The AI Triage Bot is an intelligent healthcare assistant designed to help users analyze symptoms and provide possible diagnoses, treatment suggestions, and historical patient data. This tool is particularly useful for remote areas with limited access to medical professionals. The bot leverages patient data to estimate risk factors, mortality rates, and possible health outcomes.
+> An AI-powered healthcare research assistant for symptom analysis, risk assessment, and exploration of historical patient data.
 
-Key Features:
+## 📌 About the Project
 
-Chat interface for interactive symptom input.
+AI Triage Bot is an intelligent healthcare assistant designed to help users analyze symptoms and patient information through an interactive chat interface.
 
-Analysis based on age, gender, symptoms, and other patient data.
+The system takes inputs such as age, gender, symptoms, and other available patient information to generate possible health conditions, risk-oriented insights, and recommended next steps. It can also use historical patient data to identify patterns and support research into potential health outcomes.
 
-Provides possible conditions, suggested treatments, and historical insights.
+The project is intended for **educational and research purposes** and is not a replacement for professional medical diagnosis or treatment.
 
-Supports research on past patient cases for better understanding of risks and outcomes.
+## ✨ Key Features
 
-File Structure
+### 💬 Interactive Chat Interface
 
-The project structure is organized as follows:
+* Conversational interface for entering symptoms and patient information.
+* Allows users to provide relevant details in a natural interaction.
 
+### 🩺 Symptom Analysis
+
+* Analyzes symptoms alongside basic patient information.
+* Generates possible conditions and risk-oriented insights.
+* Provides suggested next steps based on the available data.
+
+### 📊 Patient Risk Analysis
+
+* Uses factors such as age, gender, and symptoms for risk estimation.
+* Supports analysis of potential health outcomes using historical data.
+
+### 🗂️ Historical Data Analysis
+
+* Uses historical patient records as a research dataset.
+* Helps identify patterns and relationships between symptoms, patient characteristics, and outcomes.
+
+### 🔬 Research-Oriented Design
+
+* Designed to explore how AI and historical healthcare data can assist preliminary health-risk assessment.
+* Can be extended with larger datasets and improved prediction models.
+
+## 🛠️ Technology Stack
+
+* **JavaScript / Node.js**
+* **NPM**
+* **AI/ML APIs or Models**
+* **Historical Healthcare Dataset**
+* **Environment Variables (.env)**
+
+> Update this section with the exact AI model/API and libraries used in the implementation.
+
+## 📁 Project Structure
+
+```text
 ai-triage-bot/
 │
-├─ src/                  # Source code for the bot
-├─ dist/                 # Compiled or production-ready files
-├─ node_modules/         # Dependencies (installed via npm)
-├─ .env                  # Environment variables (for sensitive information)
-├─ data.zip              # Placeholder for large dataset
-├─ README.md             # Project documentation
-└─ package.json          # NPM configuration file
+├── src/                # Source code
+├── dist/               # Compiled / production files
+├── node_modules/       # Installed dependencies
+├── .env                # Environment variables
+├── data.zip            # Healthcare dataset placeholder
+├── package.json        # Project configuration and dependencies
+└── README.md           # Project documentation
+```
 
-Important Notes
+## 🚀 Installation
 
-The current data.zip file is a placeholder for the actual dataset. Before running the project, replace this zip file with your dataset. Ensure the structure and naming of files inside the zip match the expected format used by the bot.
+### 1. Clone the repository
 
-The dataset is essential for the bot to analyze symptoms and provide accurate suggestions.
-
-Installation
-
-Clone the repository:
-
+```bash
 git clone <repository_url>
 cd ai-triage-bot
+```
 
+### 2. Install dependencies
 
-Install dependencies:
-
+```bash
 npm install
+```
 
+### 3. Configure the dataset
 
-Replace the data.zip with your actual dataset.
+Replace the placeholder `data.zip` file with the required healthcare dataset.
 
-Start the application:
+Make sure the files and directory structure inside the dataset match the format expected by the application.
 
+### 4. Configure environment variables
+
+Create a `.env` file and add the required API keys or configuration values.
+
+Example:
+
+```env
+API_KEY=your_api_key
+```
+
+Do not commit sensitive API keys or credentials to GitHub.
+
+### 5. Start the application
+
+```bash
 npm start
+```
 
-Usage
+## 💻 Usage
 
-Launch the bot and interact via the chat interface.
+1. Launch the application.
+2. Open the chat interface.
+3. Enter relevant patient information such as age and gender.
+4. Describe the symptoms or health concerns.
+5. Review the generated possible conditions and risk-oriented insights.
+6. Use historical-data insights for educational or research purposes.
 
-Input patient information, symptoms, age, and gender.
+## ⚠️ Disclaimer
 
-The bot will return possible diagnoses, recommended actions, and insights from historical data.
+AI Triage Bot is an **educational and research project**.
 
-License
+The information generated by the system should not be considered a medical diagnosis, prescription, or substitute for consultation with a qualified healthcare professional.
 
-This project is open-source and free to use for educational and research purposes.
+The accuracy of the results depends on the quality, completeness, and representativeness of the underlying dataset and AI model.
+
+## 🔮 Future Improvements
+
+* Improve symptom classification and risk prediction.
+* Add support for larger and more diverse datasets.
+* Introduce visualization of historical patient trends.
+* Add confidence scores and explainability for predictions.
+* Improve privacy and secure handling of healthcare data.
+* Develop multilingual support.
+* Add a clinician/researcher dashboard for dataset analysis.
+
+## 📄 License
+
+This project is open-source and intended for educational and research purposes.
